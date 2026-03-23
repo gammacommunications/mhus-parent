@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 
-
 import:
   - default:configuration-default.yml
   - file:lifecycles.yml
@@ -29,7 +28,7 @@ projects:
        - deploy
        order: 0
      properties:
-       gitUrl: https://github.com/mhus-info/mhus-parent.git
+       gitUrl: https://github.com/gammacommunications/mhus-parent.git
        property.mhus-parent: mhus-parent.version
        property.mhus-lib: mhus-lib.version
        property.mhus-ports: mhus-ports.version
@@ -53,7 +52,7 @@ projects:
        - deploy
        order: 10
      properties:
-       gitUrl: https://github.com/mhus-info/mhus-lib.git
+       gitUrl: https://github.com/gammacommunications/mhus-lib.git
    - name: mhus-osgi-tools
      path: ../mhus-osgi-tools
      labels:
@@ -63,7 +62,7 @@ projects:
        - deploy
        order: 20
      properties:
-       gitUrl: https://github.com/mhus-info/mhus-osgi-tools.git
+       gitUrl: https://github.com/gammacommunications/mhus-osgi-tools.git
    - name: mhus-crypt
      path: ../mhus-crypt
      labels:
@@ -73,7 +72,7 @@ projects:
        - deploy
        order: 30
      properties:
-       gitUrl: https://github.com/mhus-info/mhus-crypt.git
+       gitUrl: https://github.com/gammacommunications/mhus-crypt.git
    - name: mhus-osgi-servlets
      path: ../mhus-osgi-servlets
      labels:
@@ -83,7 +82,7 @@ projects:
        - deploy
        order: 40
      properties:
-       gitUrl: https://github.com/mhus-info/mhus-osgi-servlets.git
+       gitUrl: https://github.com/gammacommunications/mhus-osgi-servlets.git
    - name: mhus-ports
      path: ../mhus-ports
      labels:
@@ -92,7 +91,7 @@ projects:
        - deploy
        order: 55
      properties:
-       gitUrl: https://github.com/mhus-info/mhus-ports.git
+       gitUrl: https://github.com/gammacommunications/mhus-ports.git
    - name: mhus-vaadin
      path: ../mhus-vaadin
      labels:
@@ -102,7 +101,7 @@ projects:
        - deploy
        order: 60
      properties:
-       gitUrl: https://github.com/mhus-info/mhus-vaadin.git
+       gitUrl: https://github.com/gammacommunications/mhus-vaadin.git
    - name: mhus-persistence
      path: ../mhus-persistence
      labels:
@@ -112,7 +111,7 @@ projects:
        - deploy
        order: 70
      properties:
-       gitUrl: https://github.com/mhus-info/mhus-persistence.git
+       gitUrl: https://github.com/gammacommunications/mhus-persistence.git
    - name: mhus-rest
      path: ../mhus-rest
      labels:
@@ -122,7 +121,7 @@ projects:
        - deploy
        order: 90
      properties:
-       gitUrl: https://github.com/mhus-info/mhus-rest.git
+       gitUrl: https://github.com/gammacommunications/mhus-rest.git
    - name: mhus-jms
      path: ../mhus-jms
      labels:
@@ -132,7 +131,7 @@ projects:
        - deploy
        order: 100
      properties:
-       gitUrl: https://github.com/mhus-info/mhus-jms.git
+       gitUrl: https://github.com/gammacommunications/mhus-jms.git
 #   - name: mhus-osgi-dev
 #     path: ../mhus-osgi-dev
 #     labels:
@@ -152,7 +151,7 @@ projects:
        - deploy
        order: 200
      properties:
-       gitUrl: https://github.com/mhus-info/mhus-reactive.git
+       gitUrl: https://github.com/gammacommunications/mhus-reactive.git
        dockerPath: assembly/reactive-playground-docker
    - name: mhus-vault
      path: ../mhus-vault
@@ -164,4 +163,4 @@ projects:
        - deploy
        order: 210
      properties:
-       gitUrl: https://github.com/mhus-info/mhus-vault.git
+       gitUrl: https://github.com/gammacommunications/mhus-vault.git
