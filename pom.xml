@@ -18,80 +18,80 @@
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
-	<modelVersion>4.0.0</modelVersion>
- 
-	<groupId>de.mhus.lib</groupId>
-	<artifactId>mhus-parent</artifactId>
-	<version>7.9.1</version>
-	<packaging>pom</packaging>
-	<description>Parent POM for all mhus java projects</description>
-	<url>http://www.mhus.info</url>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>de.mhus.lib</groupId>
+    <artifactId>mhus-parent</artifactId>
+    <version>7.9.0</version>
+    <packaging>pom</packaging>
+    <description>Parent POM for all mhus java projects</description>
+    <url>http://www.mhus.info</url>
     <name>mhus-parent</name>
     <inceptionYear>2019</inceptionYear>
-	<licenses>
-		<license>
-			<name>The Apache Software License, Version 2.0</name>
-			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-			<distribution>repo</distribution>
-		</license>
-	</licenses>
-	<scm>
-		<url>https://github.com/mhus-info/mhus-parent</url>
-		<connection>scm:git:https://github.com/mhus-info/mhus-parent/</connection>
-		<tag>HEAD</tag>
-	</scm>
-	<developers>
-		<developer>
-			<id>mhu</id>
-			<name>Mike Hummel</name>
-			<email>mh@mhus.de</email>
-			<url>http://www.mhus.de</url>
-		</developer>
-	</developers>
-	<properties>
-        <mhus-parent.version>7.9.1</mhus-parent.version>
-    	<mhus-lib.version>7.9.1</mhus-lib.version>
-        <mhus-ports.version>7.4.1</mhus-ports.version>
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <scm>
+        <url>https://github.com/mhus-info/mhus-parent</url>
+        <connection>scm:git:https://github.com/mhus-info/mhus-parent/</connection>
+        <tag>HEAD</tag>
+    </scm>
+    <developers>
+        <developer>
+            <id>mhu</id>
+            <name>Mike Hummel</name>
+            <email>mh@mhus.de</email>
+            <url>http://www.mhus.de</url>
+        </developer>
+    </developers>
+    <properties>
+        <mhus-parent.version>7.9.0</mhus-parent.version>
+        <mhus-lib.version>7.9.0</mhus-lib.version>
+        <mhus-ports.version>7.4.0</mhus-ports.version>
         <mhus-ports-vaadin.version>${mhus-ports.version}</mhus-ports-vaadin.version>
-    	<mhus-osgi-tools.version>7.8.1</mhus-osgi-tools.version>
-        <mhus-vaadin.version>7.6.1</mhus-vaadin.version>
-        <mhus-osgi-servlets.version>7.4.1</mhus-osgi-servlets.version>
-    	<mhus-crypt.version>7.6.1</mhus-crypt.version>
-    	<mhus-rest.version>7.9.1</mhus-rest.version>
-    	<!-- 
-    	<mhus-transform.version>7.6.0-SNAPSHOT</mhus-transform.version>
+        <mhus-osgi-tools.version>7.8.0</mhus-osgi-tools.version>
+        <mhus-vaadin.version>7.6.0</mhus-vaadin.version>
+        <mhus-osgi-servlets.version>7.4.0</mhus-osgi-servlets.version>
+        <mhus-crypt.version>7.6.0</mhus-crypt.version>
+        <mhus-rest.version>7.9.0</mhus-rest.version>
+        <!--
+        <mhus-transform.version>7.6.0-SNAPSHOT</mhus-transform.version>
         <mhus-mongo.version>7.8.0-SNAPSHOT</mhus-mongo.version>
         <mhus-micro.version>7.1.0-SNAPSHOT</mhus-micro.version>
-    	<mhus-cluster.version>7.0.0-SNAPSHOT</mhus-cluster.version>
-    	<mhus-web.version>7.6.0-SNAPSHOT</mhus-web.version>
-    	 -->
-    	<mhus-osgi-dev.version>7.3.0-SNAPSHOT</mhus-osgi-dev.version>
-        <mhus-db.version>7.7.1</mhus-db.version>
-        <mhus-jms.version>7.7.1</mhus-jms.version>
-    	
-    	<mhus-reactive.version>7.9.1</mhus-reactive.version>
+        <mhus-cluster.version>7.0.0-SNAPSHOT</mhus-cluster.version>
+        <mhus-web.version>7.6.0-SNAPSHOT</mhus-web.version>
+         -->
+        <mhus-osgi-dev.version>7.3.0-SNAPSHOT</mhus-osgi-dev.version>
+        <mhus-db.version>7.7.0</mhus-db.version>
+        <mhus-jms.version>7.7.0</mhus-jms.version>
+
+        <mhus-reactive.version>7.9.0</mhus-reactive.version>
         <mhus-reactive.plugin>${mhus-reactive.version}</mhus-reactive.plugin>
-        <mhus-vault.version>7.7.1</mhus-vault.version>
-        
+        <mhus-vault.version>7.7.0</mhus-vault.version>
+
         <!-- Docker -->
-    	<docker.mhus-apache-karaf.version>4.2.11.1</docker.mhus-apache-karaf.version>
-    	
+        <docker.mhus-apache-karaf.version>4.2.11.1</docker.mhus-apache-karaf.version>
+
         <!-- plugins -->
         <constgenerator.plugin>3.6.2</constgenerator.plugin>
         <constgenerator.plugin.mhus>3.6.1</constgenerator.plugin.mhus>
-    	
-		<scr.packages>*</scr.packages>
-		<bndlib.version>2.4.0</bndlib.version>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<compileSource>11</compileSource>
-		<osgi.version>6.0.0</osgi.version>
-		<activemq.version>5.16.2</activemq.version>
-		<vaadin.version>8.13.0</vaadin.version>
-		<servlet.version>3.1.0</servlet.version>
-		<portlet.version>2.0</portlet.version>
-		
-		<felix.metatype.version>1.2.2</felix.metatype.version>
-		<felix.plugin.version>3.0.1</felix.plugin.version>
+
+        <scr.packages>*</scr.packages>
+        <bndlib.version>2.4.0</bndlib.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <compileSource>11</compileSource>
+        <osgi.version>6.0.0</osgi.version>
+        <activemq.version>5.16.2</activemq.version>
+        <vaadin.version>8.13.0</vaadin.version>
+        <servlet.version>3.1.0</servlet.version>
+        <portlet.version>2.0</portlet.version>
+
+        <felix.metatype.version>1.2.2</felix.metatype.version>
+        <felix.plugin.version>3.0.1</felix.plugin.version>
         <felix.webconsole.version>4.2.0</felix.webconsole.version>
         <felix.healthcheck.annotation.version>2.0.0</felix.healthcheck.annotation.version>
         <felix.healthcheck.api.version>2.0.2</felix.healthcheck.api.version>
@@ -99,39 +99,39 @@
         <felix.healthcheck.generalchecks.version>2.0.4</felix.healthcheck.generalchecks.version>
         <felix.healthcheck.webconsoleplugin.version>2.0.0</felix.healthcheck.webconsoleplugin.version>
 
-		<maven.version>3.5.0</maven.version>
-		<jackson.version>2.12.3</jackson.version>
+        <maven.version>3.5.0</maven.version>
+        <jackson.version>2.12.3</jackson.version>
 
-		<javax.mail.version>1.6.2</javax.mail.version>
-		<jline.version>3.19.0</jline.version>
-		
+        <javax.mail.version>1.6.2</javax.mail.version>
+        <jline.version>3.19.0</jline.version>
+
         <javax.cache.version>1.1.1</javax.cache.version>
         <ehcache.version>3.8.1</ehcache.version>
-		<hazelcast.version>3.9.1</hazelcast.version><!-- cellar uses 4.0 -->
-		
-        
+        <hazelcast.version>3.9.1</hazelcast.version><!-- cellar uses 4.0 -->
+
+
         <karaf.version>4.2.11</karaf.version>
-        
+
         <servicemix-spec.version>2.9.0</servicemix-spec.version>
         <cxf.version>3.4.4</cxf.version>
         <javax.activation.version>1.1.1</javax.activation.version>
         <groovy.version>3.0.8</groovy.version>
         <openjpa3.version>3.1.1</openjpa3.version>
-        
+
         <junit.jupiter.version>5.6.2</junit.jupiter.version>
         <junit.juniper.version>5.6.2</junit.juniper.version>
         <junit.platform.version>1.6.2</junit.platform.version>
         <!-- hamcest is needed by junit -->
         <hamcrest.version>1.3</hamcrest.version>
         <logback.version>1.2.6</logback.version>
-        
+
         <geronimo-ws-metadata.version>1.1.3</geronimo-ws-metadata.version>
         <geronimo-jms.version>1.1.1</geronimo-jms.version>
         <vaadin.vaadin-sass-compiler.version>0.9.12</vaadin.vaadin-sass-compiler.version>
         <vaadin.addon-test-helpers.version>1.2</vaadin.addon-test-helpers.version>
         <slf4j.version>1.7.6</slf4j.version>
         <javax.xml.rpc.version>1.1.1</javax.xml.rpc.version>
-        <bouncycastle.version>1.67</bouncycastle.version>
+        <bouncycastle.version>1.70</bouncycastle.version>
         <bouncycastle.mail.version>1.46</bouncycastle.mail.version>
         <commons-net.version>3.6</commons-net.version>
         <commons-pool.version>1.6</commons-pool.version>
@@ -139,34 +139,34 @@
         <commons-lang3.version>3.9</commons-lang3.version>
         <commons-io.version>1.3.2</commons-io.version>
         <commons-beanutils.version>1.9.4</commons-beanutils.version>
-        
+
         <mysql.version>8.0.16</mysql.version>
         <postgresql.version>42.1.3</postgresql.version>
         <hsqldb.version>2.3.2</hsqldb.version>
-        
+
         <mongo.version>3.10.1</mongo.version>
         <mongo.morphia.version>1.5.3</mongo.morphia.version>
         <mongo.bwaldvogel.version>1.18.2</mongo.bwaldvogel.version>
-        
+
         <guava.version>30.0-jre</guava.version>
         <httpcomponents.httpcore.version>4.4.14</httpcomponents.httpcore.version>
         <httpcomponents.httpclient.version>4.5.13</httpcomponents.httpclient.version>
         <httpcomponents.httpmime.version>4.5.13</httpcomponents.httpmime.version>
         <httpcomponents.httpasyncclient.version>4.1.4</httpcomponents.httpasyncclient.version>
-        
+
         <bytebuddy.version>1.9.4</bytebuddy.version>
         <openjpa.version>2.2.1</openjpa.version>
-        <log4j.version>2.25.3 </log4j.version> <!-- for karaf 2.8.1 - should be 2.13.2 -->
+        <log4j.version>2.14.0 </log4j.version> <!-- for karaf 2.8.1 - should be 2.13.2 -->
         <pax-logging-log4j2.version>1.11.9</pax-logging-log4j2.version>
         <pax-url-aether.version>2.6.7</pax-url-aether.version>
         <jetty.version>9.4.38.v20210224</jetty.version>
         <org.json.version>20180813</org.json.version>
         <javax.servlet.version>1.0.0</javax.servlet.version>
-        
+
         <shiro.version>1.6.0</shiro.version>
         <jjwt.version>0.11.2</jjwt.version>
         <docker-java.version>3.2.5</docker-java.version>
-        
+
         <!-- features -->
         <commons-jexl.version>2.1.1</commons-jexl.version>
         <org.jsoup.version>1.11.3</org.jsoup.version>
@@ -175,18 +175,18 @@
         <commons-collections4.version>4.0</commons-collections4.version>
         <commons-discovery.version>1.3.4</commons-discovery.version>
         <javax.xml.soap.version>1.4.0</javax.xml.soap.version>
-        
+
         <!-- plugins -->
         <karaf.plugin>${karaf.version}</karaf.plugin>
-		<vaadin.plugin>8.8.3</vaadin.plugin>
-		<bundle.plugin>5.1.1</bundle.plugin>
-		<enforcer.version>1.4.1</enforcer.version>
-		<javadoc.plugin>3.2.0</javadoc.plugin>
-		<assembly.plugin>2.1</assembly.plugin>
-		<surefire.plugin>2.22.1</surefire.plugin>
-		<compiler.plugin>3.8.0</compiler.plugin>
-		<source.plugin>2.2.1</source.plugin>
-		<war.plugin>2.3</war.plugin>
+        <vaadin.plugin>8.8.3</vaadin.plugin>
+        <bundle.plugin>5.1.1</bundle.plugin>
+        <enforcer.version>1.4.1</enforcer.version>
+        <javadoc.plugin>3.2.0</javadoc.plugin>
+        <assembly.plugin>2.1</assembly.plugin>
+        <surefire.plugin>2.22.1</surefire.plugin>
+        <compiler.plugin>3.8.0</compiler.plugin>
+        <source.plugin>2.2.1</source.plugin>
+        <war.plugin>2.3</war.plugin>
         <license.plugin>2.11.1</license.plugin>
         <nexus.plugin>1.6.8</nexus.plugin>
         <install.plugin>3.0.0-M1</install.plugin>
@@ -195,43 +195,43 @@
         <tmpl.plugin>1.1.0</tmpl.plugin>
         <manual.collector.plugin>1.1.0</manual.collector.plugin>
         <maven-git-code-format.version>1.32</maven-git-code-format.version>
-        
+
         <reflections.version>0.9.12</reflections.version>
         <snakeyaml.version>1.26</snakeyaml.version>
-        
+
         <jaeger.version>1.6.0</jaeger.version>
         <opentracingapi.version>0.33.0</opentracingapi.version>
-        
-	</properties>
+
+    </properties>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
-               <groupId>de.mhus.lib</groupId>
-               <artifactId>lib-annotations</artifactId>
-               <version>${mhus-lib.version}</version>
-           </dependency>
+                <groupId>de.mhus.lib</groupId>
+                <artifactId>lib-annotations</artifactId>
+                <version>${mhus-lib.version}</version>
+            </dependency>
             <dependency>
-               <groupId>de.mhus.lib</groupId>
-               <artifactId>lib-core</artifactId>
-               <version>${mhus-lib.version}</version>
-           </dependency>
+                <groupId>de.mhus.lib</groupId>
+                <artifactId>lib-core</artifactId>
+                <version>${mhus-lib.version}</version>
+            </dependency>
             <dependency>
-               <groupId>de.mhus.lib</groupId>
-               <artifactId>lib-j2ee</artifactId>
-               <version>${mhus-lib.version}</version>
-           </dependency>
+                <groupId>de.mhus.lib</groupId>
+                <artifactId>lib-j2ee</artifactId>
+                <version>${mhus-lib.version}</version>
+            </dependency>
             <dependency>
-               <groupId>de.mhus.lib</groupId>
-               <artifactId>lib-jms</artifactId>
-               <version>${mhus-lib.version}</version>
-           </dependency>
+                <groupId>de.mhus.lib</groupId>
+                <artifactId>lib-jms</artifactId>
+                <version>${mhus-lib.version}</version>
+            </dependency>
             <dependency>
-               <groupId>de.mhus.lib</groupId>
-               <artifactId>lib-junit</artifactId>
-               <version>${mhus-lib.version}</version>
-               <scope>test</scope>
-           </dependency>
+                <groupId>de.mhus.lib</groupId>
+                <artifactId>lib-junit</artifactId>
+                <version>${mhus-lib.version}</version>
+                <scope>test</scope>
+            </dependency>
 
             <dependency>
                 <groupId>de.mhus.rest</groupId>
@@ -243,7 +243,7 @@
                 <artifactId>rest-osgi</artifactId>
                 <version>${mhus-rest.version}</version>
             </dependency>
-            <!-- 
+            <!--
             <dependency>
                <groupId>de.mhus.lib</groupId>
                <artifactId>lib-mongo</artifactId>
@@ -261,7 +261,7 @@
             </dependency>
             -->
 
-            <!-- 
+            <!--
 	        <dependency>
 	          <groupId>de.mhus.osgi</groupId>
 	          <artifactId>osgi-cluster-api</artifactId>
@@ -285,122 +285,122 @@
                 <version>${mhus-db.version}</version>
             </dependency>
 
-        <!--
-        <dependency>
-            <groupId>de.mhus.osgi</groupId>
-            <artifactId>transform-api</artifactId>
-            <version>${mhus-transform.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>de.mhus.app</groupId>
-            <artifactId>web-api</artifactId>
-            <version>${mhus-web.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>de.mhus.app</groupId>
-            <artifactId>web-util</artifactId>
-            <version>${mhus-web.version}</version>
-        </dependency>
-        -->
-        <dependency>
-            <groupId>de.mhus.crypt</groupId>
-            <artifactId>crypt-api</artifactId>
-            <version>${mhus-crypt.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>de.mhus.app.reactive</groupId>
-            <artifactId>reactive-model</artifactId>
-            <version>${mhus-reactive.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>de.mhus.app.reactive</groupId>
-            <artifactId>reactive-util</artifactId>
-            <version>${mhus-reactive.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>de.mhus.app.reactive</groupId>
-            <artifactId>reactive-osgi</artifactId>
-            <version>${mhus-reactive.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>de.mhus.app.reactive</groupId>
-            <artifactId>reactive-vaadin-widgets</artifactId>
-            <version>${mhus-reactive.version}</version>
-        </dependency>
-        <!-- 
-        <dependency>
-            <groupId>de.mhus.ports</groupId>
-            <artifactId>ports-javaxmail</artifactId>
-            <version>${mhus-ports.version}</version>
-        </dependency>
-         -->
-        <dependency>
-            <groupId>de.mhus.ports</groupId>
-            <artifactId>ports-flummi</artifactId>
-            <version>${mhus-ports.version}</version>
-        </dependency>
-
-        <dependency>
-           <groupId>de.mhus.vaadin</groupId>
-           <artifactId>vaadin-core</artifactId>
-           <version>${mhus-vaadin.version}</version>
-       </dependency>
-
-        <dependency>
-            <groupId>de.mhus.jms</groupId>
-            <artifactId>jms-core</artifactId>
-            <version>${mhus-jms.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>de.mhus.jms</groupId>
-            <artifactId>jms-osgi-api</artifactId>
-            <version>${mhus-jms.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>javax.cache</groupId>
-            <artifactId>cache-api</artifactId>
-            <version>${javax.cache.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.hazelcast</groupId>
-            <artifactId>hazelcast-all</artifactId>
-            <version>${hazelcast.version}</version>
-        </dependency>
-		<dependency>
-		    <groupId>org.ehcache</groupId>
-		    <artifactId>ehcache</artifactId>
-		    <version>${ehcache.version}</version>
-		</dependency>
-		<dependency>
-		    <groupId>org.ehcache</groupId>
-		    <artifactId>ehcache-clustered</artifactId>
-		    <version>${ehcache.version}</version>
-		</dependency>
-        
-           
-		    <dependency>
-		             <groupId>org.mongodb</groupId>
-		             <artifactId>mongo-java-driver</artifactId>
-		             <version>${mongo.version}</version>
-		    </dependency>      
-		    <dependency>
-		             <groupId>dev.morphia.morphia</groupId>
-		             <artifactId>core</artifactId>
-		             <version>${mongo.morphia.version}</version>
-		    </dependency>
-		    <dependency>
-		        <groupId>de.bwaldvogel</groupId>
-		        <artifactId>mongo-java-server</artifactId>
-		        <version>${mongo.bwaldvogel.version}</version>
-		        <scope>test</scope>
-		    </dependency>
-           
+            <!--
             <dependency>
-	            <groupId>de.mhus.osgi</groupId>
-	            <artifactId>osgi-services</artifactId>
-	            <version>${mhus-osgi-tools.version}</version>
+                <groupId>de.mhus.osgi</groupId>
+                <artifactId>transform-api</artifactId>
+                <version>${mhus-transform.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.mhus.app</groupId>
+                <artifactId>web-api</artifactId>
+                <version>${mhus-web.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.mhus.app</groupId>
+                <artifactId>web-util</artifactId>
+                <version>${mhus-web.version}</version>
+            </dependency>
+            -->
+            <dependency>
+                <groupId>de.mhus.crypt</groupId>
+                <artifactId>crypt-api</artifactId>
+                <version>${mhus-crypt.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>de.mhus.app.reactive</groupId>
+                <artifactId>reactive-model</artifactId>
+                <version>${mhus-reactive.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.mhus.app.reactive</groupId>
+                <artifactId>reactive-util</artifactId>
+                <version>${mhus-reactive.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.mhus.app.reactive</groupId>
+                <artifactId>reactive-osgi</artifactId>
+                <version>${mhus-reactive.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.mhus.app.reactive</groupId>
+                <artifactId>reactive-vaadin-widgets</artifactId>
+                <version>${mhus-reactive.version}</version>
+            </dependency>
+            <!--
+            <dependency>
+                <groupId>de.mhus.ports</groupId>
+                <artifactId>ports-javaxmail</artifactId>
+                <version>${mhus-ports.version}</version>
+            </dependency>
+             -->
+            <dependency>
+                <groupId>de.mhus.ports</groupId>
+                <artifactId>ports-flummi</artifactId>
+                <version>${mhus-ports.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>de.mhus.vaadin</groupId>
+                <artifactId>vaadin-core</artifactId>
+                <version>${mhus-vaadin.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>de.mhus.jms</groupId>
+                <artifactId>jms-core</artifactId>
+                <version>${mhus-jms.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.mhus.jms</groupId>
+                <artifactId>jms-osgi-api</artifactId>
+                <version>${mhus-jms.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>javax.cache</groupId>
+                <artifactId>cache-api</artifactId>
+                <version>${javax.cache.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.hazelcast</groupId>
+                <artifactId>hazelcast-all</artifactId>
+                <version>${hazelcast.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.ehcache</groupId>
+                <artifactId>ehcache</artifactId>
+                <version>${ehcache.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.ehcache</groupId>
+                <artifactId>ehcache-clustered</artifactId>
+                <version>${ehcache.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>org.mongodb</groupId>
+                <artifactId>mongo-java-driver</artifactId>
+                <version>${mongo.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>dev.morphia.morphia</groupId>
+                <artifactId>core</artifactId>
+                <version>${mongo.morphia.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.bwaldvogel</groupId>
+                <artifactId>mongo-java-server</artifactId>
+                <version>${mongo.bwaldvogel.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>de.mhus.osgi</groupId>
+                <artifactId>osgi-services</artifactId>
+                <version>${mhus-osgi-tools.version}</version>
             </dependency>
             <dependency>
                 <groupId>de.mhus.osgi</groupId>
@@ -412,629 +412,629 @@
                 <artifactId>osgi-jms</artifactId>
                 <version>${mhus-osgi-tools.version}</version>
             </dependency>
-           
+
             <dependency>
-	            <groupId>org.apache.cxf</groupId>
-	            <artifactId>cxf-rt-frontend-jaxws</artifactId>
-	            <version>${cxf.version}</version>
-	        </dependency>
-	        <dependency>
-	            <groupId>biz.aQute.bnd</groupId>
-	            <artifactId>bndlib</artifactId>
-	            <version>${bndlib.version}</version>
-	        </dependency>
-        <dependency>
-            <groupId>org.apache.karaf.shell</groupId>
-            <artifactId>org.apache.karaf.shell.console</artifactId>
-            <version>${karaf.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.karaf.log</groupId>
-            <artifactId>org.apache.karaf.log.core</artifactId>
-            <version>${karaf.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.karaf.jaas</groupId>
-            <artifactId>org.apache.karaf.jaas.config</artifactId>
-            <version>${karaf.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.karaf.jaas</groupId>
-            <artifactId>org.apache.karaf.jaas.modules</artifactId>
-            <version>${karaf.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.karaf.bundle</groupId>
-            <artifactId>org.apache.karaf.bundle.core</artifactId>
-            <version>${karaf.version}</version>
-        </dependency>
-        <!-- 
-        <dependency>
-            <groupId>org.apache.karaf.shell</groupId>
-            <artifactId>org.apache.karaf.shell.core</artifactId>
-            <version>${karaf.version}</version>
-        </dependency>
-         -->
-        <dependency>
-            <groupId>javax.activation</groupId>
-            <artifactId>activation</artifactId>
-            <version>${javax.activation.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.sun.mail</groupId>
-            <artifactId>javax.mail</artifactId>
-            <version>${javax.mail.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.osgi</groupId>
-            <artifactId>org.osgi.core</artifactId>
-            <version>${osgi.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.osgi</groupId>
-            <artifactId>osgi.cmpn</artifactId>
-            <version>${osgi.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>${servlet.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.hsqldb</groupId>
-            <artifactId>hsqldb</artifactId>
-            <version>${hsqldb.version}</version>
-            <type>jar</type>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.geronimo.specs</groupId>
-            <artifactId>geronimo-ws-metadata_2.0_spec</artifactId>
-            <version>${geronimo-ws-metadata.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.geronimo.specs</groupId>
-            <artifactId>geronimo-jms_1.1_spec</artifactId>
-            <version>${geronimo-jms.version}</version>
-        </dependency>
-        
-        <dependency>
-            <groupId>com.vaadin</groupId>
-            <artifactId>vaadin-compatibility-server</artifactId>
-            <version>${vaadin.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.vaadin</groupId>
-            <artifactId>vaadin-compatibility-shared</artifactId>
-            <version>${vaadin.version}</version>
-        </dependency>
+                <groupId>org.apache.cxf</groupId>
+                <artifactId>cxf-rt-frontend-jaxws</artifactId>
+                <version>${cxf.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>biz.aQute.bnd</groupId>
+                <artifactId>bndlib</artifactId>
+                <version>${bndlib.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.karaf.shell</groupId>
+                <artifactId>org.apache.karaf.shell.console</artifactId>
+                <version>${karaf.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.karaf.log</groupId>
+                <artifactId>org.apache.karaf.log.core</artifactId>
+                <version>${karaf.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.karaf.jaas</groupId>
+                <artifactId>org.apache.karaf.jaas.config</artifactId>
+                <version>${karaf.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.karaf.jaas</groupId>
+                <artifactId>org.apache.karaf.jaas.modules</artifactId>
+                <version>${karaf.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.karaf.bundle</groupId>
+                <artifactId>org.apache.karaf.bundle.core</artifactId>
+                <version>${karaf.version}</version>
+            </dependency>
+            <!--
+            <dependency>
+                <groupId>org.apache.karaf.shell</groupId>
+                <artifactId>org.apache.karaf.shell.core</artifactId>
+                <version>${karaf.version}</version>
+            </dependency>
+             -->
+            <dependency>
+                <groupId>javax.activation</groupId>
+                <artifactId>activation</artifactId>
+                <version>${javax.activation.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.sun.mail</groupId>
+                <artifactId>javax.mail</artifactId>
+                <version>${javax.mail.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.osgi</groupId>
+                <artifactId>org.osgi.core</artifactId>
+                <version>${osgi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.osgi</groupId>
+                <artifactId>osgi.cmpn</artifactId>
+                <version>${osgi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>javax.servlet-api</artifactId>
+                <version>${servlet.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hsqldb</groupId>
+                <artifactId>hsqldb</artifactId>
+                <version>${hsqldb.version}</version>
+                <type>jar</type>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.geronimo.specs</groupId>
+                <artifactId>geronimo-ws-metadata_2.0_spec</artifactId>
+                <version>${geronimo-ws-metadata.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.geronimo.specs</groupId>
+                <artifactId>geronimo-jms_1.1_spec</artifactId>
+                <version>${geronimo-jms.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.vaadin</groupId>
+                <artifactId>vaadin-compatibility-server</artifactId>
+                <version>${vaadin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.vaadin</groupId>
+                <artifactId>vaadin-compatibility-shared</artifactId>
+                <version>${vaadin.version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.vaadin</groupId>
                 <artifactId>vaadin-compatibility-client</artifactId>
                 <version>${vaadin.version}</version>
             </dependency>
-        <dependency>
-            <groupId>com.vaadin</groupId>
-            <artifactId>vaadin-compatibility-client-compiled</artifactId>
-            <version>${vaadin.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.vaadin</groupId>
-            <artifactId>vaadin-client-compiler</artifactId>
-            <version>${vaadin.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.vaadin</groupId>
-            <artifactId>vaadin-compatibility-themes</artifactId>
-            <version>${vaadin.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.vaadin</groupId>
-            <artifactId>addon-test-helpers</artifactId>
-            <version>${vaadin.addon-test-helpers.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.vaadin</groupId>
-            <artifactId>vaadin-sass-compiler</artifactId>
-            <version>${vaadin.vaadin-sass-compiler.version}</version>
-        </dependency>
-            
-        <dependency>
-	        <groupId>org.apache.activemq</groupId>
-	        <artifactId>activemq-osgi</artifactId>
-            <version>${activemq.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>${slf4j.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>javax.xml.rpc</groupId>
-            <artifactId>javax.xml.rpc-api</artifactId>
-            <version>${javax.xml.rpc.version}</version>
-        </dependency>
-        <dependency>
-            <artifactId>bcprov-jdk15on</artifactId>
-            <groupId>org.bouncycastle</groupId>
-            <version>${bouncycastle.version}</version>
-        </dependency>
-	    <dependency>
-	        <groupId>org.bouncycastle</groupId>
-	        <artifactId>bcmail-jdk15</artifactId>
-	        <version>${bouncycastle.mail.version}</version>
-	    </dependency>
-        <dependency>
-            <groupId>commons-dbcp</groupId>
-            <artifactId>commons-dbcp</artifactId>
-            <version>${commons-dbcp.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>commons-pool</groupId>
-            <artifactId>commons-pool</artifactId>
-            <version>${commons-pool.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>commons-net</groupId>
-            <artifactId>commons-net</artifactId>
-            <version>${commons-net.version}</version>
-        </dependency>
-        <dependency>
-          <groupId>com.google.guava</groupId>
-          <artifactId>guava</artifactId>
-          <version>${guava.version}</version>
-        </dependency>
-        <dependency>
-          <groupId>org.apache.commons</groupId>
-          <artifactId>commons-lang3</artifactId>
-          <version>${commons-lang3.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>commons-beanutils</groupId>
-            <artifactId>commons-beanutils</artifactId>
-            <version>${commons-beanutils.version}</version>
-        </dependency>
-    <dependency>
-        <groupId>org.apache.httpcomponents</groupId>
-        <artifactId>httpclient</artifactId>
-        <version>${httpcomponents.httpclient.version}</version>
-    </dependency>
-        <dependency>
-            <groupId>org.apache.httpcomponents</groupId>
-            <artifactId>httpasyncclient</artifactId>
-            <version>${httpcomponents.httpasyncclient.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.httpcomponents</groupId>
-            <artifactId>httpmime</artifactId>
-            <version>${httpcomponents.httpmime.version}</version>
-        </dependency>
-    <dependency>
-      <groupId>net.bytebuddy</groupId>
-      <artifactId>byte-buddy</artifactId>
-      <version>${bytebuddy.version}</version>
-    </dependency>
-    <dependency>
-        <groupId>net.bytebuddy</groupId>
-        <artifactId>byte-buddy-agent</artifactId>
-        <version>${bytebuddy.version}</version>
-    </dependency>
-    <dependency>
-        <groupId>org.jline</groupId>
-        <artifactId>jline</artifactId>
-        <version>${jline.version}</version>
-    </dependency>
-    <dependency>
-        <groupId>javax.portlet</groupId>
-        <artifactId>portlet-api</artifactId>
-        <version>${portlet.version}</version>
-    </dependency>
-	<dependency>
-	    <groupId>com.fasterxml.jackson.core</groupId>
-	    <artifactId>jackson-databind</artifactId>
-	    <version>${jackson.version}</version>
-	</dependency>
-    <dependency>
-        <groupId>org.apache.openjpa</groupId>
-        <artifactId>openjpa</artifactId>
-        <version>${openjpa.version}</version>
-        <scope>provided</scope>
-        <exclusions>
-            <exclusion>
-                <groupId>junit</groupId>
-                <artifactId>junit</artifactId>
-            </exclusion>
-        </exclusions>
-    </dependency>
-    <dependency>
-        <groupId>mysql</groupId>
-        <artifactId>mysql-connector-java</artifactId>
-        <version>${mysql.version}</version>
-    </dependency>
-    <dependency>
-        <groupId>org.postgresql</groupId>
-        <artifactId>postgresql</artifactId>
-        <version>${postgresql.version}</version>
-    </dependency>
-    <dependency>
-        <groupId>org.apache.logging.log4j</groupId>
-        <artifactId>log4j-core</artifactId>
-        <version>${log4j.version}</version>
-    </dependency>
-        <dependency>
-            <groupId>org.codehaus.groovy</groupId>
-            <artifactId>groovy</artifactId>
-            <version>${groovy.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.eclipse.jetty</groupId>
-            <artifactId>jetty-webapp</artifactId>
-            <version>${jetty.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.ops4j.pax.url</groupId>
-            <artifactId>pax-url-aether</artifactId>
-            <version>${pax-url-aether.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.ops4j.pax.logging</groupId>
-            <artifactId>pax-logging-log4j2</artifactId>
-            <version>${pax-logging-log4j2.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.felix</groupId>
-            <artifactId>org.apache.felix.metatype</artifactId>
-            <version>${felix.metatype.version}</version>
-        </dependency>
-		<!-- https://mvnrepository.com/artifact/org.apache.felix/org.apache.felix.healthcheck.api -->
-		<dependency>
-		    <groupId>org.apache.felix</groupId>
-		    <artifactId>org.apache.felix.healthcheck.api</artifactId>
-		    <version>${felix.healthcheck.api.version}</version>
-		</dependency>
-        <dependency>
-            <groupId>org.apache.felix</groupId>
-            <artifactId>org.apache.felix.healthcheck.annotation</artifactId>
-            <version>${felix.healthcheck.annotation.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-io</artifactId>
-            <version>${commons-io.version}</version>
-        </dependency>
-         <dependency>
-             <groupId>org.apache.felix</groupId>
-            <artifactId>org.apache.felix.webconsole</artifactId>
-            <version>${felix.webconsole.version}</version>
-         </dependency>
-         <dependency>
-            <groupId>org.apache.felix</groupId>
-            <artifactId>javax.servlet</artifactId>
-            <version>${javax.servlet.version}</version>
-         </dependency>
-        <dependency>
-            <groupId>org.json</groupId>
-            <artifactId>json</artifactId>
-            <version>${org.json.version}</version>
-        </dependency>
-          
-        <dependency>
-            <groupId>org.apache.shiro</groupId>
-            <artifactId>shiro-core</artifactId>
-            <version>${shiro.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.shiro</groupId>
-            <artifactId>shiro-config-core</artifactId>
-            <version>${shiro.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.shiro</groupId>
-            <artifactId>shiro-config-ogdl</artifactId>
-            <version>${shiro.version}</version>
-        </dependency>
-        <!-- Common annotations for shiro -->
-        <dependency>
-		  <groupId>javax.annotation</groupId>
-		  <artifactId>jsr250-api</artifactId>
-		  <version>1.0</version>
-        </dependency>
-        
-        <!-- I should not use web for developing
-        <dependency>
-            <groupId>org.apache.shiro</groupId>
-            <artifactId>shiro-web</artifactId>
-            <version>${shiro.version}</version>
-        </dependency>
-         -->
-		<!-- https://github.com/ronmamo/reflections -->
-		<dependency>
-		    <groupId>org.reflections</groupId>
-		    <artifactId>reflections</artifactId>
-		    <version>${reflections.version}</version>
-		</dependency>
-        
-		<dependency>
-		    <groupId>org.yaml</groupId>
-		    <artifactId>snakeyaml</artifactId>
-		    <version>${snakeyaml.version}</version>
-		</dependency>
-		
-		<dependency>
-	        <groupId>io.opentracing</groupId>
-		    <artifactId>opentracing-api</artifactId>
-	        <version>${opentracingapi.version}</version>
-		</dependency>
-		<dependency>
-	        <groupId>io.opentracing</groupId>
-		    <artifactId>opentracing-util</artifactId>
-	        <version>${opentracingapi.version}</version>
-		</dependency>
+            <dependency>
+                <groupId>com.vaadin</groupId>
+                <artifactId>vaadin-compatibility-client-compiled</artifactId>
+                <version>${vaadin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.vaadin</groupId>
+                <artifactId>vaadin-client-compiler</artifactId>
+                <version>${vaadin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.vaadin</groupId>
+                <artifactId>vaadin-compatibility-themes</artifactId>
+                <version>${vaadin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.vaadin</groupId>
+                <artifactId>addon-test-helpers</artifactId>
+                <version>${vaadin.addon-test-helpers.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.vaadin</groupId>
+                <artifactId>vaadin-sass-compiler</artifactId>
+                <version>${vaadin.vaadin-sass-compiler.version}</version>
+            </dependency>
 
-		<dependency>
-		  <groupId>io.jaegertracing</groupId>
-		  <artifactId>jaeger-client</artifactId>
-		  <version>${jaeger.version}</version>
-		</dependency>
-		
-		<dependency>
-		    <groupId>io.jsonwebtoken</groupId>
-		    <artifactId>jjwt-api</artifactId>
-		    <version>${jjwt.version}</version>
-		</dependency>
-		<dependency>
-		    <groupId>io.jsonwebtoken</groupId>
-		    <artifactId>jjwt-impl</artifactId>
-		    <version>${jjwt.version}</version>
-		    <scope>runtime</scope>
-		</dependency>
-		<dependency>
-		    <groupId>io.jsonwebtoken</groupId>
-		    <artifactId>jjwt-jackson</artifactId>
-		    <version>${jjwt.version}</version>
-		    <scope>runtime</scope>
-		</dependency>
-		
-	    </dependencies>
+            <dependency>
+                <groupId>org.apache.activemq</groupId>
+                <artifactId>activemq-osgi</artifactId>
+                <version>${activemq.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.xml.rpc</groupId>
+                <artifactId>javax.xml.rpc-api</artifactId>
+                <version>${javax.xml.rpc.version}</version>
+            </dependency>
+            <dependency>
+                <artifactId>bcprov-jdk15on</artifactId>
+                <groupId>org.bouncycastle</groupId>
+                <version>${bouncycastle.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.bouncycastle</groupId>
+                <artifactId>bcmail-jdk15</artifactId>
+                <version>${bouncycastle.mail.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-dbcp</groupId>
+                <artifactId>commons-dbcp</artifactId>
+                <version>${commons-dbcp.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-pool</groupId>
+                <artifactId>commons-pool</artifactId>
+                <version>${commons-pool.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-net</groupId>
+                <artifactId>commons-net</artifactId>
+                <version>${commons-net.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons-lang3.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-beanutils</groupId>
+                <artifactId>commons-beanutils</artifactId>
+                <version>${commons-beanutils.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>${httpcomponents.httpclient.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpasyncclient</artifactId>
+                <version>${httpcomponents.httpasyncclient.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpmime</artifactId>
+                <version>${httpcomponents.httpmime.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>net.bytebuddy</groupId>
+                <artifactId>byte-buddy</artifactId>
+                <version>${bytebuddy.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>net.bytebuddy</groupId>
+                <artifactId>byte-buddy-agent</artifactId>
+                <version>${bytebuddy.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jline</groupId>
+                <artifactId>jline</artifactId>
+                <version>${jline.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.portlet</groupId>
+                <artifactId>portlet-api</artifactId>
+                <version>${portlet.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.openjpa</groupId>
+                <artifactId>openjpa</artifactId>
+                <version>${openjpa.version}</version>
+                <scope>provided</scope>
+                <exclusions>
+                    <exclusion>
+                        <groupId>junit</groupId>
+                        <artifactId>junit</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.postgresql</groupId>
+                <artifactId>postgresql</artifactId>
+                <version>${postgresql.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-core</artifactId>
+                <version>${log4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.codehaus.groovy</groupId>
+                <artifactId>groovy</artifactId>
+                <version>${groovy.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-webapp</artifactId>
+                <version>${jetty.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.ops4j.pax.url</groupId>
+                <artifactId>pax-url-aether</artifactId>
+                <version>${pax-url-aether.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.ops4j.pax.logging</groupId>
+                <artifactId>pax-logging-log4j2</artifactId>
+                <version>${pax-logging-log4j2.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>org.apache.felix.metatype</artifactId>
+                <version>${felix.metatype.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/org.apache.felix/org.apache.felix.healthcheck.api -->
+            <dependency>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>org.apache.felix.healthcheck.api</artifactId>
+                <version>${felix.healthcheck.api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>org.apache.felix.healthcheck.annotation</artifactId>
+                <version>${felix.healthcheck.annotation.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>${commons-io.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>org.apache.felix.webconsole</artifactId>
+                <version>${felix.webconsole.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>javax.servlet</artifactId>
+                <version>${javax.servlet.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.json</groupId>
+                <artifactId>json</artifactId>
+                <version>${org.json.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-core</artifactId>
+                <version>${shiro.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-config-core</artifactId>
+                <version>${shiro.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-config-ogdl</artifactId>
+                <version>${shiro.version}</version>
+            </dependency>
+            <!-- Common annotations for shiro -->
+            <dependency>
+                <groupId>javax.annotation</groupId>
+                <artifactId>jsr250-api</artifactId>
+                <version>1.0</version>
+            </dependency>
+
+            <!-- I should not use web for developing
+            <dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-web</artifactId>
+                <version>${shiro.version}</version>
+            </dependency>
+             -->
+            <!-- https://github.com/ronmamo/reflections -->
+            <dependency>
+                <groupId>org.reflections</groupId>
+                <artifactId>reflections</artifactId>
+                <version>${reflections.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.yaml</groupId>
+                <artifactId>snakeyaml</artifactId>
+                <version>${snakeyaml.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.opentracing</groupId>
+                <artifactId>opentracing-api</artifactId>
+                <version>${opentracingapi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.opentracing</groupId>
+                <artifactId>opentracing-util</artifactId>
+                <version>${opentracingapi.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.jaegertracing</groupId>
+                <artifactId>jaeger-client</artifactId>
+                <version>${jaeger.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt-api</artifactId>
+                <version>${jjwt.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt-impl</artifactId>
+                <version>${jjwt.version}</version>
+                <scope>runtime</scope>
+            </dependency>
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt-jackson</artifactId>
+                <version>${jjwt.version}</version>
+                <scope>runtime</scope>
+            </dependency>
+
+        </dependencies>
     </dependencyManagement>
-    
-	<build>
-		<defaultGoal>install</defaultGoal>
-		
+
+    <build>
+        <defaultGoal>install</defaultGoal>
+
         <pluginManagement>
-	        <plugins>
-	            <plugin>
-	                <groupId>de.mhus.app.reactive</groupId>
-	                <artifactId>reactive-maven-plugin</artifactId>
-	                <version>${mhus-reactive.plugin}</version>
-	                <executions>
-	                    <execution>
-	                        <goals>
-	                            <goal>validate</goal>
-	                            <goal>designer</goal>
-	                        </goals>
-	                    </execution>
-	                </executions>
-	            </plugin>
+            <plugins>
+                <plugin>
+                    <groupId>de.mhus.app.reactive</groupId>
+                    <artifactId>reactive-maven-plugin</artifactId>
+                    <version>${mhus-reactive.plugin}</version>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>validate</goal>
+                                <goal>designer</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
                 <plugin>
                     <groupId>de.mhus.mvn.plugin</groupId>
                     <artifactId>constgenerator-maven-plugin</artifactId>
                     <version>${constgenerator.plugin}</version>
-                <executions>
-                  <execution>
-                    <phase>compile</phase>
-                    <goals>
-                      <goal>const-generate</goal>
-                    </goals>
-                  </execution>
-                </executions>
-	               <configuration>
-	                   <artifactInclude>de\.mhus.*</artifactInclude>
-	                   <ignore>REGISTER_NATIVES</ignore>
-	               </configuration>
-                  <dependencies>
-                    <dependency>
-                        <groupId>de.mhus.lib</groupId>
-                        <artifactId>mhu-lib-annotations</artifactId>
-                        <version>${constgenerator.plugin.mhus}</version>
-                    </dependency>
-                  </dependencies>
+                    <executions>
+                        <execution>
+                            <phase>compile</phase>
+                            <goals>
+                                <goal>const-generate</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                    <configuration>
+                        <artifactInclude>de\.mhus.*</artifactInclude>
+                        <ignore>REGISTER_NATIVES</ignore>
+                    </configuration>
+                    <dependencies>
+                        <dependency>
+                            <groupId>de.mhus.lib</groupId>
+                            <artifactId>mhu-lib-annotations</artifactId>
+                            <version>${constgenerator.plugin.mhus}</version>
+                        </dependency>
+                    </dependencies>
                 </plugin>
-		        <plugin>
-		            <groupId>com.vaadin</groupId>
-		            <artifactId>vaadin-maven-plugin</artifactId>
-		            <version>${vaadin.plugin}</version>
-		        </plugin>
-	            <plugin>
-	                <groupId>org.apache.felix</groupId>
-	                <artifactId>maven-bundle-plugin</artifactId>
-	                <version>${bundle.plugin}</version>
-	            </plugin>
+                <plugin>
+                    <groupId>com.vaadin</groupId>
+                    <artifactId>vaadin-maven-plugin</artifactId>
+                    <version>${vaadin.plugin}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.felix</groupId>
+                    <artifactId>maven-bundle-plugin</artifactId>
+                    <version>${bundle.plugin}</version>
+                </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-war-plugin</artifactId>
                     <version>${war.plugin}</version>
                 </plugin>
-	            <plugin>
-	                <groupId>de.mhus.mvn.plugin</groupId>
-	                <version>${tmpl.plugin}</version>
-	                <artifactId>tmpl-maven-plugin</artifactId>
-	                <configuration>
-	                    <files>
-	                            <directory>${basedir}</directory>   
-	                            <includes>
-	                               <include>**/*</include>
-	                            </includes>
-	                    </files>
-	                </configuration>
-	                <executions>
-	                    <execution>
-	                        <phase>package</phase>
-	                        <goals>
-	                            <goal>tmpl</goal>
-	                        </goals>
-	                    </execution>
-	                </executions>
-	            </plugin>
-	            <plugin>
-	                <groupId>de.mhus.mvn.plugin</groupId>
-	                <artifactId>license-maven-plugin</artifactId>
-	                <version>${license.plugin}</version>
-	                <configuration>
-	                    <aggregate>true</aggregate>
-	                    <header>com/mycila/maven/plugin/license/templates/APACHE-2.txt</header>
-	                    <properties>
-	                        <owner>Mike Hummel</owner>
-	                        <email>mh@mhus.de</email>
-	                    </properties>
-	                    <excludes>
-	                        <exclude>README.*</exclude>
-	                        <exclude>readme.*</exclude>
-	                        <exclude>LICENSE</exclude>
-	                        <exclude>LICENSE_HEADER</exclude>
-	                        <exclude>src/test/resources/**</exclude>
-	                        <exclude>src/main/resources/**</exclude>
-	                        <exclude>mhu-liferay-theme/src/main/webapp/**</exclude>
-	                        <exclude>docs/**</exclude>
-	                    </excludes>
-	                </configuration>
-	                <executions>
-	                    <execution>
-	                        <goals>
-	                            <goal>format</goal>
-	                        </goals>
-	                    </execution>
-	                </executions>
-	            </plugin>
-	        </plugins>
-	        
+                <plugin>
+                    <groupId>de.mhus.mvn.plugin</groupId>
+                    <version>${tmpl.plugin}</version>
+                    <artifactId>tmpl-maven-plugin</artifactId>
+                    <configuration>
+                        <files>
+                            <directory>${basedir}</directory>
+                            <includes>
+                                <include>**/*</include>
+                            </includes>
+                        </files>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <phase>package</phase>
+                            <goals>
+                                <goal>tmpl</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+                <plugin>
+                    <groupId>de.mhus.mvn.plugin</groupId>
+                    <artifactId>license-maven-plugin</artifactId>
+                    <version>${license.plugin}</version>
+                    <configuration>
+                        <aggregate>true</aggregate>
+                        <header>com/mycila/maven/plugin/license/templates/APACHE-2.txt</header>
+                        <properties>
+                            <owner>Mike Hummel</owner>
+                            <email>mh@mhus.de</email>
+                        </properties>
+                        <excludes>
+                            <exclude>README.*</exclude>
+                            <exclude>readme.*</exclude>
+                            <exclude>LICENSE</exclude>
+                            <exclude>LICENSE_HEADER</exclude>
+                            <exclude>src/test/resources/**</exclude>
+                            <exclude>src/main/resources/**</exclude>
+                            <exclude>mhu-liferay-theme/src/main/webapp/**</exclude>
+                            <exclude>docs/**</exclude>
+                        </excludes>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>format</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+            </plugins>
+
         </pluginManagement>
-		<plugins>
-		    <plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-install-plugin</artifactId>
-				<version>${install.plugin}</version>
-		    </plugin>
-			<plugin>
+        <plugins>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>${compiler.plugin}</version>
-				<configuration>
-					<source>${compileSource}</source>
-					<target>${compileSource}</target>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId>
-                 <version>${surefire.plugin}</version>
-				<configuration>
-					<trimStackTrace>false</trimStackTrace>
-			        <useSystemClassLoader>false</useSystemClassLoader>
-				</configuration>
-			</plugin>
-			<plugin>
+                <artifactId>maven-install-plugin</artifactId>
+                <version>${install.plugin}</version>
+            </plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-assembly-plugin</artifactId>
-				<version>${assembly.plugin}</version>
-				<configuration>
-					<finalName>doc</finalName>
-					<descriptors>
-						<descriptor>descriptor.xml</descriptor>
-					</descriptors>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>${javadoc.plugin}</version>
-				<configuration>
-					<failOnError>false</failOnError>
-				</configuration>
-				<executions>
-					<execution>
-						<id>attach-javadocs</id>
-						<goals>
-							<goal>jar</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-enforcer-plugin</artifactId>
-				<version>${enforcer.version}</version>
-				<executions>
-					<execution>
-						<id>enforce-maven</id>
-						<goals>
-							<goal>enforce</goal>
-						</goals>
-						<configuration>
-							<rules>
-								<requireMavenVersion>
-									<version>[3,4)</version>
-								</requireMavenVersion>
-								<!-- 
-								<requireJavaVersion>
-									<version>[1.8,1.9)</version>
-								</requireJavaVersion>
-								 -->
-							</rules>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-			    <!-- https://github.com/Cosium/maven-git-code-format -->
-	            <!-- https://en.wikipedia.org/wiki/Glob_(programming) -->
-	            <plugin>
-	              <groupId>com.cosium.code</groupId>
-	              <artifactId>maven-git-code-format</artifactId>
-	              <version>${maven-git-code-format.version}</version>
-	              <configuration>
-	                <googleJavaFormatOptions>
-	                  <aosp>true</aosp>
-	                  <fixImportsOnly>false</fixImportsOnly>
-	                  <skipSortingImports>true</skipSortingImports>
-	                  <skipRemovingUnusedImports>false</skipRemovingUnusedImports>
-	                </googleJavaFormatOptions>
-	                <globPattern>**/[!_]*</globPattern>
-	              </configuration>
-	            </plugin>		
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${compiler.plugin}</version>
+                <configuration>
+                    <source>${compileSource}</source>
+                    <target>${compileSource}</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${surefire.plugin}</version>
+                <configuration>
+                    <trimStackTrace>false</trimStackTrace>
+                    <useSystemClassLoader>false</useSystemClassLoader>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>${assembly.plugin}</version>
+                <configuration>
+                    <finalName>doc</finalName>
+                    <descriptors>
+                        <descriptor>descriptor.xml</descriptor>
+                    </descriptors>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>${javadoc.plugin}</version>
+                <configuration>
+                    <failOnError>false</failOnError>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <version>${enforcer.version}</version>
+                <executions>
+                    <execution>
+                        <id>enforce-maven</id>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                        <configuration>
+                            <rules>
+                                <requireMavenVersion>
+                                    <version>[3,4)</version>
+                                </requireMavenVersion>
+                                <!--
+                                <requireJavaVersion>
+                                    <version>[1.8,1.9)</version>
+                                </requireJavaVersion>
+                                 -->
+                            </rules>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <!-- https://github.com/Cosium/maven-git-code-format -->
+            <!-- https://en.wikipedia.org/wiki/Glob_(programming) -->
+            <plugin>
+                <groupId>com.cosium.code</groupId>
+                <artifactId>maven-git-code-format</artifactId>
+                <version>${maven-git-code-format.version}</version>
+                <configuration>
+                    <googleJavaFormatOptions>
+                        <aosp>true</aosp>
+                        <fixImportsOnly>false</fixImportsOnly>
+                        <skipSortingImports>true</skipSortingImports>
+                        <skipRemovingUnusedImports>false</skipRemovingUnusedImports>
+                    </googleJavaFormatOptions>
+                    <globPattern>**/[!_]*</globPattern>
+                </configuration>
+            </plugin>
 
-			    <plugin>
-			        <groupId>org.sonatype.ossindex.maven</groupId>
-			        <artifactId>ossindex-maven-plugin</artifactId>
-			        <version>3.1.0</version>
-			    </plugin>	            
-			    
-			     <plugin>
-			        <groupId>org.jacoco</groupId>
-			        <artifactId>jacoco-maven-plugin</artifactId>
-			        <version>0.8.6</version>
-			        <executions>
-			          <execution>
-			            <id>prepare-agent</id>
-			            <goals>
-			              <goal>prepare-agent</goal>
-			            </goals>
-			          </execution>
-			          <execution>
-			            <id>post-unit-test</id>
-			            <phase>test</phase>
-			            <goals>
-			              <goal>report-aggregate</goal>
-			            </goals>
-<!--			            <configuration>-->
-<!--			              <dataFile>${project.build.directory}/jacoco.exec</dataFile>-->
-<!--			              <outputDirectory>${project.build.directory}/jacoco-ut</outputDirectory>-->
-<!--			            </configuration>-->
-			          </execution>
-			        </executions>
-			      </plugin>			    
-			    
-	        </plugins>
+            <plugin>
+                <groupId>org.sonatype.ossindex.maven</groupId>
+                <artifactId>ossindex-maven-plugin</artifactId>
+                <version>3.1.0</version>
+            </plugin>
 
-	</build>
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.8.6</version>
+                <executions>
+                    <execution>
+                        <id>prepare-agent</id>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>post-unit-test</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>report-aggregate</goal>
+                        </goals>
+                        <configuration>
+                            <dataFile>${project.build.directory}/jacoco.exec</dataFile>
+                            <outputDirectory>${project.build.directory}/jacoco-ut</outputDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+
+    </build>
 
     <dependencies>
         <!-- junit 5, unit tests -->
@@ -1044,7 +1044,7 @@
             <version>${junit.jupiter.version}</version>
             <scope>test</scope>
         </dependency>
-        <!-- 
+        <!--
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
@@ -1070,35 +1070,25 @@
            <scope>test</scope>
         </dependency>
          -->
-		<!-- Needed by junit -->
-		<!-- 
-		<dependency>
-		    <groupId>org.hamcrest</groupId>
-		    <artifactId>hamcrest-all</artifactId>
-		    <version>${hamcrest.version}</version>
-		    <scope>test</scope>
-		</dependency>
-		 -->
-     </dependencies>
+        <!-- Needed by junit -->
+        <!--
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-all</artifactId>
+            <version>${hamcrest.version}</version>
+            <scope>test</scope>
+        </dependency>
+         -->
+    </dependencies>
 
 
     <repositories>
         <repository>
-           <id>vaadin-addons</id>
-           <url>https://maven.vaadin.com/vaadin-addons</url>
-        </repository>
-        <repository>
-            <id>nexus_gammanetwork</id>
-            <url>https://nexus.gammanetwork.de/repository/maven-snapshots</url>
-            <snapshots><enabled>true</enabled></snapshots>
-        </repository>
-        <repository>
-            <id>nexus_gammanetwork_releases</id>
-            <url>https://nexus.gammanetwork.de/repository/maven-releases</url>
-            <snapshots><enabled>false</enabled></snapshots>
+            <id>vaadin-addons</id>
+            <url>https://maven.vaadin.com/vaadin-addons</url>
         </repository>
     </repositories>
-    
+
     <modules>
         <module>mhus-oss</module>
         <module>mhus-karaf</module>
@@ -1122,18 +1112,10 @@
                 </property>
             </activation>
             <distributionManagement>
-                <repository>
-                    <id>nexus_gammanetwork_releases</id>
-                    <url>https://nexus.gammanetwork.de/repository/maven-releases</url>
-                </repository>
                 <snapshotRepository>
-                    <id>nexus_gammanetwork</id>
-                    <url>https://nexus.gammanetwork.de/repository/maven-snapshots</url>
+                    <id>ossrh</id>
+                    <url>https://oss.sonatype.org/content/repositories/snapshots</url>
                 </snapshotRepository>
-<!--                <snapshotRepository>-->
-<!--                    <id>ossrh</id>-->
-<!--                    <url>https://oss.sonatype.org/content/repositories/snapshots</url>-->
-<!--                </snapshotRepository>-->
             </distributionManagement>
             <build>
                 <plugins>
@@ -1143,8 +1125,8 @@
                         <version>${nexus.plugin}</version>
                         <extensions>true</extensions>
                         <configuration>
-                            <serverId>nexus_gammanetwork</serverId>
-                            <nexusUrl>https://nexus.gammanetwork.de/</nexusUrl>
+                            <serverId>ossrh</serverId>
+                            <nexusUrl>https://oss.sonatype.org/</nexusUrl>
                             <autoReleaseAfterClose>true</autoReleaseAfterClose>
                         </configuration>
                     </plugin>
@@ -1167,7 +1149,7 @@
                     </plugin>
                 </plugins>
             </build>
-        
+
         </profile>
         <profile>
             <id>apache-rat</id>
@@ -1237,97 +1219,88 @@
         <profile>
             <id>deploy-ngnetwork</id>
             <distributionManagement>
-                <repository>
-                    <id>nexus_gammanetwork_releases</id>
-                    <url>https://nexus.gammanetwork.de/repository/maven-releases</url>
-                </repository>
                 <snapshotRepository>
                     <id>nexus_gammanetwork</id>
                     <url>https://nexus.gammanetwork.de/repository/maven-snapshots</url>
-                    <snapshots><enabled>true</enabled></snapshots>
                 </snapshotRepository>
+                <repository>
+                    <id>nexus_gammanetwork</id>
+                    <url>https://nexus.gammanetwork.de/repository/maven-releases</url>
+                </repository>
             </distributionManagement>
-		    <build>
-		      <plugins>
-                  <plugin>
-                      <groupId>de.mhus.mvn.plugin</groupId>
-                      <artifactId>tmpl-maven-plugin</artifactId>
-                  </plugin>
-		      </plugins>
-		    </build>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>de.mhus.mvn.plugin</groupId>
+                        <artifactId>tmpl-maven-plugin</artifactId>
+                    </plugin>
+                </plugins>
+            </build>
         </profile>
         <profile>
             <id>release-mhus</id>
             <distributionManagement>
-                <repository>
-                    <id>nexus_gammanetwork_releases</id>
-                    <url>https://nexus.gammanetwork.de/repository/maven-releases</url>
-                </repository>
                 <snapshotRepository>
-                    <id>nexus_gammanetwork</id>
-                    <url>https://nexus.gammanetwork.de/repository/maven-snapshots</url>
+                    <id>ossrh</id>
+                    <url>https://oss.sonatype.org/content/repositories/snapshots</url>
                 </snapshotRepository>
-<!--                <snapshotRepository>-->
-<!--                    <id>ossrh</id>-->
-<!--                    <url>https://oss.sonatype.org/content/repositories/snapshots</url>-->
-<!--                </snapshotRepository>-->
-<!--                <repository>-->
-<!--                    <id>ossrh</id>-->
-<!--                    <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>-->
-<!--                </repository>-->
+                <repository>
+                    <id>ossrh</id>
+                    <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+                </repository>
             </distributionManagement>
             <build>
                 <plugins>
-		            <plugin>
-		                <groupId>org.sonatype.plugins</groupId>
-		                <artifactId>nexus-staging-maven-plugin</artifactId>
-		                <version>${nexus.plugin}</version>
-		                <extensions>true</extensions>
-		                <configuration>
-		                    <serverId>nexus_gammanetwork_releases</serverId>
-		                    <nexusUrl>https://nexus.gammanetwork.de/</nexusUrl>
-		                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
-		                </configuration>
-		            </plugin>
-<!--                    <plugin>-->
-<!--                        <groupId>de.mhus.mvn.plugin</groupId>-->
-<!--                        <artifactId>gpg-maven-plugin</artifactId>-->
-<!--                        <version>${gpg.plugin}</version>-->
-<!--                        <configuration>-->
-<!--                            <passphrase>${gpg.passphrase}</passphrase>-->
-<!--                            <keyname>42034A84BE15AF2D0C620161C3DEB8CE79E38C30</keyname>-->
-<!--                        </configuration>-->
-<!--                        <executions>-->
-<!--                            <execution>-->
-<!--                                <id>sign-artifacts</id>-->
-<!--                                <phase>verify</phase>-->
-<!--                                <goals>-->
-<!--                                    <goal>sign</goal>-->
-<!--                                </goals>-->
-<!--                            </execution>-->
-<!--                        </executions>-->
-<!--                    </plugin>-->
-		            <plugin>
-		                <groupId>org.apache.maven.plugins</groupId>
-		                <artifactId>maven-source-plugin</artifactId>
-		                <version>${source.plugin}</version>
-		                <executions>
-		                    <execution>
-		                        <id>attach-sources</id>
-		                        <goals>
-		                            <goal>jar-no-fork</goal>
-		                        </goals>
-		                    </execution>
-		                </executions>
-		            </plugin>
-	                <plugin>
-	                    <groupId>de.mhus.mvn.plugin</groupId>
-	                    <artifactId>tmpl-maven-plugin</artifactId>
-	                </plugin>
+                    <plugin>
+                        <groupId>org.sonatype.plugins</groupId>
+                        <artifactId>nexus-staging-maven-plugin</artifactId>
+                        <version>${nexus.plugin}</version>
+                        <extensions>true</extensions>
+                        <configuration>
+                            <serverId>ossrh</serverId>
+                            <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+                            <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                        </configuration>
+                    </plugin>
+                    <plugin>
+                        <groupId>de.mhus.mvn.plugin</groupId>
+                        <artifactId>gpg-maven-plugin</artifactId>
+                        <version>${gpg.plugin}</version>
+                        <configuration>
+                            <passphrase>${gpg.passphrase}</passphrase>
+                            <keyname>42034A84BE15AF2D0C620161C3DEB8CE79E38C30</keyname>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <id>sign-artifacts</id>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>sign</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-source-plugin</artifactId>
+                        <version>${source.plugin}</version>
+                        <executions>
+                            <execution>
+                                <id>attach-sources</id>
+                                <goals>
+                                    <goal>jar-no-fork</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>de.mhus.mvn.plugin</groupId>
+                        <artifactId>tmpl-maven-plugin</artifactId>
+                    </plugin>
                 </plugins>
             </build>
-            
+
         </profile>
     </profiles>
-    
+
 </project>
